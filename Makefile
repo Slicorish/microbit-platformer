@@ -30,6 +30,7 @@ OUTPUT_FILE = build/bbc-microbit-classic-gcc/source/microbit-platformer-combined
 
 run: ${OUTPUT_FILE}
 	cp ${OUTPUT_FILE} ${MICROBIT_PATH}
+	cp ${OUTPUT_FILE} ${MICROBIT_PATH}1
 
 ${OUTPUT_FILE}: ${SOURCE_FILES}
 	yt build

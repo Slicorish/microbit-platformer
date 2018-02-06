@@ -14,6 +14,7 @@ namespace platformer {
     void Game::run() {
         // Game should start in the main menu.
         setState(new MenuGameState(this));
+        microBit->display.print("B");
 
         // Initialize the micro:bit.
         microBit->init();
@@ -33,9 +34,10 @@ namespace platformer {
     }
 
     void Game::onButtonAPress(MicroBitEvent) {
-        if (!changingState) {
-            state->onButtonAPress();
-        }
+        microBit->display.print("A");
+//        if (!changingState) {
+//            state->onButtonAPress();
+//        }
     }
 
     void Game::onButtonBPress(MicroBitEvent) {

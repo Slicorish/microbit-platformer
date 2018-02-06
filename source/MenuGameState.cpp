@@ -71,12 +71,12 @@ namespace platformer {
     }
 
     void MenuGameState::run() {
-        game->getMicroBit()->display.scroll("SELECT WORLD", SCROLL_SPEED);
+//        game->getMicroBit()->display.scroll("SELECT WORLD", SCROLL_SPEED);
 
         while (game->getState() == this) {
             game->getScreen()->clear();
             tick();
-            render();
+//            render();
             game->getMicroBit()->sleep(TICK_RATE);
         }
 

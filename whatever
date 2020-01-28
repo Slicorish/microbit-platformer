@@ -1,0 +1,19 @@
+
+Search...
+3456789101112131415161718192012
+    music.beginMelody(music.builtInMelody(Melodies.Prelude), MelodyOptions.Once)})input.onButtonPressed(Button.B, () => {    basic.showIcon(IconNames.Sad)    music.beginMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)})input.onButtonPressed(Button.AB, () => {     basic.showLeds(`        . . . . .        . # . # .        . . . . .        . # # # .        . . . . .        `)    music.beginMelody(music.builtInMelody(Melodies.Baddy), MelodyOptions.Once)}) input.onButtonPressed(Button.A, () => {    basic.showIcon(IconNames.Happy)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        . . . . .
+        `)
+    music.beginMelody(music.builtInMelody(Melodies.Baddy), MelodyOptions.Once)
+})
+
+Find
+No Results
+
+Provides access to basic micro:bit functionality.
+
